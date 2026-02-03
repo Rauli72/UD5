@@ -1,14 +1,13 @@
-package Actividad_1.Ej_13;
+package Actividad_3.Upcasting_Downcasting;
 
-public class ac13 {
+public class Upcasting_Downcasting {
     public static void main(String[] args) {
-        // Prueba círculo y cilindro
-        Circulo c = new Circulo(5);
-        System.out.printf("Área del círculo: %.2f%n", c.getArea());
+        // DOWNCASTING
+        Circulo c = new Cilindro(5,4);
+        Cilindro c2 = (Cilindro)c;
 
-
-        Cilindro cil = new Cilindro(3, 10);
-        System.out.printf("Volumen del cilindro: %.2f%n", cil.getVolume());
+        // UPCASTING
+        Cilindro d = (Cilindro) new Circulo(5);
     }
 }
 
