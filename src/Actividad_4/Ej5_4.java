@@ -27,6 +27,19 @@ public class Ej5_4 {
         System.out.printf("Y mi tasa de impuestos es de: %.2f y %.2f%n", libros[0].calcularImpuestos(), libros[1].calcularImpuestos());
         System.out.println("Hola los libros que me he comprado nuevamente son: " + libros[0].toString() + " y " + libros[1].toString());
         System.out.println("Y el mejor autor de todos los tiempos es: " + libros[1].getAutor());
+
+        System.out.println("\n");
+
+        Imponible[] imponibles = new Imponible[3];
+        imponibles[0] = new Comida("Manzana", 2.5, 19);
+        imponibles[1] = new Juguete("Coche", 15, 5);
+        imponibles[2] = new Libro("Alas de Hierro", 25.43, "Rebecca Yarros");
+
+        System.out.println(imponibles[0]);
+        System.out.println(imponibles[1]);
+        System.out.println(imponibles[2]);
+
+
     }
 }
 
