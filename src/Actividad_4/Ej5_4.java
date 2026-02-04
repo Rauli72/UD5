@@ -1,7 +1,5 @@
 package Actividad_4;
 
-import javax.sound.midi.Soundbank;
-
 public class Ej5_4 {
     public static void main(String[] args) {
         /*
@@ -33,8 +31,8 @@ public class Ej5_4 {
 }
 
 class Bienes {
-    String descripcion;
-    double precio;
+    protected String descripcion;
+    protected double precio;
 
     public Bienes(String descripcion, double precio) {
         this.descripcion = descripcion;
@@ -43,7 +41,7 @@ class Bienes {
 }
 
 class Comida extends Bienes implements Imponible {
-    double calorias;
+    private double calorias;
 
     public Comida(String descripcion, double precio, double calorias) {
         super(descripcion, precio);
@@ -62,7 +60,7 @@ class Comida extends Bienes implements Imponible {
 }
 
 class Juguete extends Bienes implements Imponible {
-    int edadMinima;
+    private int edadMinima;
 
     public Juguete(String descripcion, double precio, int edadMinima) {
         super(descripcion, precio);
@@ -81,7 +79,7 @@ class Juguete extends Bienes implements Imponible {
 }
 
 class Libro extends Bienes implements Imponible {
-    String autor;
+    private String autor;
 
     public Libro(String descripcion, double precio, String autor) {
         super(descripcion, precio);
