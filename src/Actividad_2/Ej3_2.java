@@ -36,9 +36,8 @@ class Impresora {
     }
 
     // SETTER
-    public int setNivelToner(int nivelToner) {
+    public void setNivelToner(int nivelToner) {
         this.nivelToner = nivelToner;
-        return nivelToner;
     }
 
     // MÉTODOS
@@ -46,7 +45,15 @@ class Impresora {
         if (nivelToner <= 0 || nivelToner > 100) {
             return this.nivelToner = -1;
         } else {
-            return setNivelToner(nivelToner);
+            int nuevoNivelToner = this.nivelToner += nivelToner;
+
+            if (nuevoNivelToner > 100) {
+                return this.nivelToner = -1;
+
+            }  else {
+                setNivelToner(nuevoNivelToner);
+                return nuevoNivelToner;
+            }
         }
     }
 

@@ -1,4 +1,4 @@
-package Actividad_3.Upcasting_Downcasting;
+package Extra.Upcasting_Downcasting;
 
 public class Upcasting_Downcasting {
     public static void main(String[] args) {
