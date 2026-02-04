@@ -14,10 +14,10 @@ public class Ej1_4 {
     Porque se deben poder acceder a ellos para declararlos, por lo tanto, son siempre públicos por defectos.
 
     D) ¿Podrían las interfaces contener varias definiciones de la misma constante?
-    Sí que se podría tener 2 interfaces que declaren la misma constante
+    Sí que se podría tener 2 interfaces que declaren la misma constante, pero hay que especificar por ambigüedad.
 
     E) ¿Puede una clase heredar de varias interfaces?
-    Sí que puede
+    Sí que puede.
 
     F) Si una clase hereda de varias interfaces, y esas interfaces tienen un mismo métod0 con
        la misma signatura, ¿se producirá un error? ¿por qué?
